@@ -4,5 +4,5 @@ from django.shortcuts import render
 
 
 def suiviDon(request):
-    return render(request,'donInterface.html')
+    return render(request,'don.html')
 
