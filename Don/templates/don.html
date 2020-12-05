@@ -55,81 +55,33 @@
                                 
                                     <table id="example" class="table table-striped table-bordered" style="width:100%">
                                         <thead>
+                                                <tr>
+                                                    <th>Gouvernorat</th>
+                                                    <th>Hopital</th>
+                                                    <th>Montant</th>
+                                                    <th>Don recu</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                            {% for element in dataDon %}
+                                                <tr>
+                                                    <td>{{ element }}</td>
+                                                    <td>{{ element}}</td>
+                                                    <td>{{ element.montant }}</td>
+                                                    <td>{{ element }}</td>
+                                                    <td>{{ element }}</td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                        <tfoot>
                                             <tr>
                                                 <th>Gouvernorat</th>
                                                 <th>Hopital</th>
                                                 <th>Montant</th>
                                                 <th>Don recu</th>
                                                 <th>Date</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Finn Camacho</td>
-                                                <td>Support Engineer</td>
-                                                <td>San Francisco</td>
-                                                <td>47</td>
-                                                <td>2009/07/07</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Serge Baldwin</td>
-                                                <td>Data Coordinator</td>
-                                                <td>Singapore</td>
-                                                <td>64</td>
-                                                <td>2012/04/09</td>
-                                            </tr>
-                                         
-                                        </tbody>
-                                        <tfoot>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Position</th>
-                                                <th>Office</th>
-                                                <th>Age</th>
-                                                <th>Start date</th>
                                             </tr>
                                         </tfoot>
                                     </table>
